@@ -148,6 +148,7 @@
             buttonReports.Text = "Reports";
             buttonReports.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonReports.UseVisualStyleBackColor = false;
+            buttonReports.Click += buttonReports_Click;
             // 
             // buttonLogout
             // 

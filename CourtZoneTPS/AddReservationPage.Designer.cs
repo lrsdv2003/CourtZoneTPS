@@ -507,6 +507,7 @@
             buttonClear.TabIndex = 1;
             buttonClear.Text = "Clear";
             buttonClear.UseVisualStyleBackColor = false;
+            buttonClear.Click += buttonClear_Click;
             // 
             // buttonCancel
             // 

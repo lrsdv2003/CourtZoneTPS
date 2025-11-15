@@ -120,7 +120,7 @@
             flpanelEmployee.Location = new Point(0, 70);
             flpanelEmployee.Margin = new Padding(0);
             flpanelEmployee.Name = "flpanelEmployee";
-            flpanelEmployee.Padding = new Padding(10);
+            flpanelEmployee.Padding = new Padding(0, 10, 0, 10);
             flpanelEmployee.Size = new Size(410, 100);
             flpanelEmployee.TabIndex = 3;
             // 
@@ -129,7 +129,7 @@
             labelCustomerName.Dock = DockStyle.Left;
             labelCustomerName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             labelCustomerName.ForeColor = Color.FromArgb(30, 58, 138);
-            labelCustomerName.Location = new Point(10, 10);
+            labelCustomerName.Location = new Point(0, 10);
             labelCustomerName.Margin = new Padding(0, 0, 0, 10);
             labelCustomerName.Name = "labelCustomerName";
             labelCustomerName.Size = new Size(400, 30);
@@ -142,10 +142,10 @@
             textBoxEmployeeNumber.BorderStyle = BorderStyle.FixedSingle;
             textBoxEmployeeNumber.Dock = DockStyle.Left;
             textBoxEmployeeNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxEmployeeNumber.Location = new Point(10, 50);
+            textBoxEmployeeNumber.Location = new Point(0, 50);
             textBoxEmployeeNumber.Margin = new Padding(0);
             textBoxEmployeeNumber.Name = "textBoxEmployeeNumber";
-            textBoxEmployeeNumber.Size = new Size(397, 34);
+            textBoxEmployeeNumber.Size = new Size(407, 34);
             textBoxEmployeeNumber.TabIndex = 2;
             // 
             // flpanelPassword
@@ -182,7 +182,7 @@
             textBoxPassword.Location = new Point(0, 50);
             textBoxPassword.Margin = new Padding(0);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(397, 34);
+            textBoxPassword.Size = new Size(407, 34);
             textBoxPassword.TabIndex = 2;
             textBoxPassword.UseSystemPasswordChar = true;
             // 
@@ -192,7 +192,7 @@
             checkBoxShowPassword.Location = new Point(3, 87);
             checkBoxShowPassword.Name = "checkBoxShowPassword";
             checkBoxShowPassword.RightToLeft = RightToLeft.Yes;
-            checkBoxShowPassword.Size = new Size(394, 30);
+            checkBoxShowPassword.Size = new Size(404, 30);
             checkBoxShowPassword.TabIndex = 5;
             checkBoxShowPassword.Text = "show password";
             checkBoxShowPassword.TextImageRelation = TextImageRelation.ImageBeforeText;

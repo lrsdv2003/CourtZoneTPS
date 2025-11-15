@@ -16,7 +16,16 @@ namespace CourtZoneTPS
         {
             InitializeComponent();
         }
-        
 
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textBoxCustomerName.Clear();
+            textBoxContactNumber.Clear();
+            comboBoxCourtType.ResetText();
+            comboBoxPaymentStatus.ResetText();
+            comboBoxSportType.ResetText();
+            comboBoxTime.ResetText();
+            dateTimePickerDate.ResetText();
+        }
     }
 }

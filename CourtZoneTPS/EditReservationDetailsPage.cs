@@ -65,7 +65,6 @@ namespace CourtZoneTPS
 
             MessageBox.Show("Reservation updated successfully!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Return to the Edit Reservation page
             EditReservationPage editPage = new EditReservationPage();
             ((MainForm)ParentForm).LoadPage(editPage);
         }

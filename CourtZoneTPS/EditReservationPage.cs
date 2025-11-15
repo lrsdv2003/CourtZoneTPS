@@ -89,7 +89,6 @@ namespace CourtZoneTPS
                                                    "Confirm Delete",
                                                    MessageBoxButtons.YesNo,
                                                    MessageBoxIcon.Question);
-
             if (confirm == DialogResult.Yes)
             {
                 dataGridViewReservation.Rows.RemoveAt(dataGridViewReservation.SelectedRows[0].Index);

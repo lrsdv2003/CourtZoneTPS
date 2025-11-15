@@ -28,5 +28,10 @@ namespace CourtZoneTPS
         {
             LoadPage(new EditReservationPage());
         }
+
+        private void buttonReports_Click(object sender, EventArgs e)
+        {
+            LoadPage(new ReportsPage());
+        }
     }
 }
