@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CourtZoneTPS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+594109b0b527924d18b308e2a3ff73afa63bb751")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be3f4f24b742f2312c5ff479052b2c77973c2463")]
 [assembly: System.Reflection.AssemblyProductAttribute("CourtZoneTPS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CourtZoneTPS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
