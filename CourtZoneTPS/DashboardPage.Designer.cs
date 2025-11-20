@@ -318,7 +318,6 @@
             labelCustomer1Name.Name = "labelCustomer1Name";
             labelCustomer1Name.Size = new Size(267, 50);
             labelCustomer1Name.TabIndex = 3;
-            labelCustomer1Name.Text = "Customer 1 Name";
             labelCustomer1Name.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelCustomer1Time
@@ -330,7 +329,6 @@
             labelCustomer1Time.Name = "labelCustomer1Time";
             labelCustomer1Time.Size = new Size(100, 50);
             labelCustomer1Time.TabIndex = 3;
-            labelCustomer1Time.Text = "00:00";
             labelCustomer1Time.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panelCustomer2
@@ -354,7 +352,6 @@
             labelCustomer2Name.Name = "labelCustomer2Name";
             labelCustomer2Name.Size = new Size(267, 50);
             labelCustomer2Name.TabIndex = 3;
-            labelCustomer2Name.Text = "Customer 2 Name";
             labelCustomer2Name.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelCustomer2Time
@@ -366,7 +363,6 @@
             labelCustomer2Time.Name = "labelCustomer2Time";
             labelCustomer2Time.Size = new Size(100, 50);
             labelCustomer2Time.TabIndex = 3;
-            labelCustomer2Time.Text = "00:00";
             labelCustomer2Time.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panelCustomer3
@@ -390,7 +386,6 @@
             labelCustomer3Name.Name = "labelCustomer3Name";
             labelCustomer3Name.Size = new Size(267, 50);
             labelCustomer3Name.TabIndex = 3;
-            labelCustomer3Name.Text = "Customer 3 Name";
             labelCustomer3Name.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelCustomer3Time
@@ -402,7 +397,6 @@
             labelCustomer3Time.Name = "labelCustomer3Time";
             labelCustomer3Time.Size = new Size(100, 50);
             labelCustomer3Time.TabIndex = 3;
-            labelCustomer3Time.Text = "00:00";
             labelCustomer3Time.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panelCalendar

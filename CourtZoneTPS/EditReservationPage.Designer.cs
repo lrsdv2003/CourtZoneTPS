@@ -148,7 +148,6 @@
             textBoxSearchCustomer.Name = "textBoxSearchCustomer";
             textBoxSearchCustomer.Size = new Size(400, 32);
             textBoxSearchCustomer.TabIndex = 7;
-            textBoxSearchCustomer.Text = "Search by customer name";
             textBoxSearchCustomer.TextChanged += textBoxSearchCustomer_TextChanged;
             // 
             // dataGridViewReservation
@@ -168,7 +167,6 @@
             dataGridViewReservation.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewReservation.Size = new Size(940, 400);
             dataGridViewReservation.TabIndex = 7;
-            dataGridViewReservation.CellContentClick += dataGridViewReservation_CellContentClick;
             // 
             // flowLayoutPanel2
             // 
@@ -228,6 +226,7 @@
             buttonRefresh.TabIndex = 2;
             buttonRefresh.Text = "Refresh";
             buttonRefresh.UseVisualStyleBackColor = false;
+            buttonRefresh.Click += buttonRefresh_Click;
             // 
             // EditReservationPage
             // 

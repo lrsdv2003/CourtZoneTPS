@@ -294,6 +294,7 @@
             comboBoxSportType.Name = "comboBoxSportType";
             comboBoxSportType.Size = new Size(250, 36);
             comboBoxSportType.TabIndex = 2;
+            comboBoxSportType.SelectedIndexChanged += comboBoxSportType_SelectedIndexChanged;
             // 
             // flpanelCourtType
             // 
@@ -332,6 +333,7 @@
             comboBoxCourtType.Name = "comboBoxCourtType";
             comboBoxCourtType.Size = new Size(250, 36);
             comboBoxCourtType.TabIndex = 3;
+            comboBoxCourtType.SelectedIndexChanged += comboBoxCourtType_SelectedIndexChanged;
             // 
             // panel3
             // 
@@ -379,6 +381,8 @@
             dateTimePickerDate.Name = "dateTimePickerDate";
             dateTimePickerDate.Size = new Size(250, 27);
             dateTimePickerDate.TabIndex = 2;
+            dateTimePickerDate.Value = new DateTime(2025, 11, 18, 0, 0, 0, 0);
+            dateTimePickerDate.ValueChanged += dateTimePickerDate_ValueChanged;
             // 
             // flpanleTime
             // 
@@ -403,7 +407,7 @@
             labelTime.Name = "labelTime";
             labelTime.Size = new Size(450, 30);
             labelTime.TabIndex = 1;
-            labelTime.Text = "Time";
+            labelTime.Text = "Available Time";
             labelTime.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // comboBoxTime
@@ -492,6 +496,7 @@
             buttonSaveReservation.TabIndex = 0;
             buttonSaveReservation.Text = "Save";
             buttonSaveReservation.UseVisualStyleBackColor = false;
+            buttonSaveReservation.Click += buttonSaveReservation_Click;
             // 
             // buttonClear
             // 
@@ -523,6 +528,7 @@
             buttonCancel.TabIndex = 2;
             buttonCancel.Text = "Cancel";
             buttonCancel.UseVisualStyleBackColor = false;
+            buttonCancel.Click += buttonCancel_Click;
             // 
             // AddReservationPage
             // 

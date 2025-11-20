@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,16 +13,14 @@ namespace CourtZoneTPS
 {
     public partial class EditReservationPage : UserControl
     {
+        private string dbPath = @"C:\Users\jm\OneDrive\Desktop\Database\CourtZoneTpsDB.db";
+        private string connectionString;
         public EditReservationPage()
         {
             InitializeComponent();
+            connectionString = $"Data Source={dbPath};Version=3;";
             SetupGrid();
             LoadReservations(DateTime.Now);
-        }
-
-        private void dataGridViewReservation_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
         private void SetupGrid()
         {
@@ -32,14 +31,9 @@ namespace CourtZoneTPS
             dataGridViewReservation.Columns.Add("court", "Court");
             dataGridViewReservation.Columns.Add("time", "Time Slot");
             dataGridViewReservation.Columns.Add("payment", "Payment Status");
+            dataGridViewReservation.Columns.Add("contact", "Contact Number");
             dataGridViewReservation.Columns["id"].Visible = false;
         }
-
-        private void dateTimePickerSelectDate_ValueChanged(object sender, EventArgs e)
-        {
-            LoadReservations(dateTimePickerSelectDate.Value);
-        }
-
         private void textBoxSearchCustomer_TextChanged(object sender, EventArgs e)
         {
             string keyword = textBoxSearchCustomer.Text.ToLower();
@@ -57,43 +51,115 @@ namespace CourtZoneTPS
         {
             dataGridViewReservation.Rows.Clear();
 
-            // Simulated data
-            dataGridViewReservation.Rows.Add(1, "John Doe", "Basketball", "Court 1", "1:00 PM - 3:00 PM", "50% Downpayment", "Confirmed");
-            dataGridViewReservation.Rows.Add(2, "Anna Cruz", "Volleyball", "Court 2", "3:30 PM - 5:30 PM", "Fully Paid", "Confirmed");
-            dataGridViewReservation.Rows.Add(3, "Mark Reyes", "Badminton", "Court 4", "6:00 PM - 7:00 PM", "Unpaid", "Pending");
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            {
+                conn.Open();
+
+                string dateFormat = selectedDate.ToString("dd/MM/yyyy");
+
+                string query = "SELECT * FROM ReservationInfo WHERE date = @date";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@date", dateFormat);
+
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            dataGridViewReservation.Rows.Add(
+                                reader["reservation_Id"],
+                                reader["customerName"],
+                                reader["sportsType"],
+                                reader["courtType"],
+                                reader["time"],
+                                reader["paymentStatus"],
+                                reader["contactNumber"]
+                            );
+                        }
+                    }
+                }
+            }
         }
 
         private void buttonEditSelected_Click(object sender, EventArgs e)
         {
             if (dataGridViewReservation.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a reservation to edit.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a reservation to edit.");
                 return;
             }
 
-            int reservationID = Convert.ToInt32(dataGridViewReservation.SelectedRows[0].Cells["id"].Value);
+            int reservationID = Convert.ToInt32(
+                dataGridViewReservation.SelectedRows[0].Cells["id"].Value
+            );
+
             EditReservationDetailsPage detailsPage = new EditReservationDetailsPage(reservationID);
             ((MainForm)ParentForm).LoadPage(detailsPage);
         }
-
         private void buttonDeleteSelected_Click(object sender, EventArgs e)
         {
-            if (dataGridViewReservation.SelectedRows.Count == 0)
+            try
             {
-                MessageBox.Show("Please select a reservation to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                if (dataGridViewReservation.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Please select a reservation to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            string name = dataGridViewReservation.SelectedRows[0].Cells["customer"].Value.ToString();
-            DialogResult confirm = MessageBox.Show($"Are you sure you want to delete {name}'s reservation?",
-                                                   "Confirm Delete",
-                                                   MessageBoxButtons.YesNo,
-                                                   MessageBoxIcon.Question);
-            if (confirm == DialogResult.Yes)
-            {
-                dataGridViewReservation.Rows.RemoveAt(dataGridViewReservation.SelectedRows[0].Index);
-                MessageBox.Show("Reservation deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string customerName = dataGridViewReservation.SelectedRows[0].Cells["customer"].Value.ToString();
+
+                DialogResult confirm = MessageBox.Show(
+                    $"Are you sure you want to delete {customerName}'s reservation?",
+                    "Confirm Delete",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (confirm == DialogResult.Yes)
+                {
+                    DeleteReservation(customerName);
+                    LoadReservations(dateTimePickerSelectDate.Value);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void DeleteReservation(string customerName)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "DELETE FROM ReservationInfo WHERE customerName = @customerName";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@customerName", customerName);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Reservation deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No record found with that name.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            LoadReservations(dateTimePickerSelectDate.Value);
+        }
+        private void dateTimePickerSelectDate_ValueChanged(object sender, EventArgs e)
+        {
+            LoadReservations(dateTimePickerSelectDate.Value);
         }
     }
 }

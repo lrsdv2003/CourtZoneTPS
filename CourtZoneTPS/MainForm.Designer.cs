@@ -168,6 +168,7 @@
             buttonLogout.TextAlign = ContentAlignment.MiddleLeft;
             buttonLogout.TextImageRelation = TextImageRelation.TextBeforeImage;
             buttonLogout.UseVisualStyleBackColor = false;
+            buttonLogout.Click += buttonLogout_Click;
             // 
             // panelSidebar
             // 

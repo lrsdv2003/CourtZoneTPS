@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace CourtZoneTPS
 {
     public partial class LoginForm : Form
     {
+
         public LoginForm()
         {
             InitializeComponent();
@@ -24,28 +27,58 @@ namespace CourtZoneTPS
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string username = textBoxEmployeeNumber.Text.Trim();
+            string employeeNumber = textBoxEmployeeNumber.Text.Trim();
             string password = textBoxPassword.Text.Trim();
 
-            if (username == "" || password == "")
+            if (string.IsNullOrEmpty(employeeNumber) || string.IsNullOrEmpty(password))
             {
                 labelError.Text = "Please enter both username and password.";
                 labelError.Visible = true;
                 return;
             }
 
-            // Temporary check (replace with DB check later)
-            if (username == "admin" && password == "1234")
+            try
             {
-                MainForm main = new MainForm();
-                main.Show();
-                this.Hide();
+                if (UserHelper.LoginUser(employeeNumber, password))
+                {
+                    this.Hide();
+                    MainForm main = new MainForm();
+                    main.Show();
+                }
+                else
+                {
+                    labelError.Text = "Invalid username or password.";
+                    labelError.Visible = true;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                labelError.Text = "Invalid username or password.";
-                labelError.Visible = true;
+                MessageBox.Show("Error: " + ex.Message, "Check the Path!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public string GetUsernameByEmployeeNumber()
+        {
+            string employeeNumber = textBoxEmployeeNumber.Text;
+            string dbPath = @"C:\Users\jm\OneDrive\Desktop\Database\CourtZoneTpsDB.db";
+            string connectionString = $"Data Source={dbPath};Version=3;";
+
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "SELECT employeeNumber FROM loginInfo WHERE employeeNumber = @employeeNumber";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@employeeNumber", employeeNumber);
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null)
+                        return result.ToString();
+                    else
+                        return null; 
+                }
+            }
+        }
+
     }
 }

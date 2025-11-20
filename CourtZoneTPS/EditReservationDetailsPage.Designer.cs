@@ -294,6 +294,7 @@
             comboBoxSportType.Name = "comboBoxSportType";
             comboBoxSportType.Size = new Size(250, 36);
             comboBoxSportType.TabIndex = 2;
+            comboBoxSportType.SelectedIndexChanged += comboBoxSportType_SelectedIndexChanged;
             // 
             // flpanelCourtType
             // 
@@ -332,6 +333,7 @@
             comboBoxCourtType.Name = "comboBoxCourtType";
             comboBoxCourtType.Size = new Size(250, 36);
             comboBoxCourtType.TabIndex = 3;
+            comboBoxCourtType.SelectedIndexChanged += comboBoxCourtType_SelectedIndexChanged;
             // 
             // panel3
             // 
@@ -374,11 +376,13 @@
             // 
             dateTimePickerDate.CalendarFont = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dateTimePickerDate.Dock = DockStyle.Left;
+            dateTimePickerDate.Format = DateTimePickerFormat.Custom;
             dateTimePickerDate.Location = new Point(10, 50);
             dateTimePickerDate.Margin = new Padding(0);
             dateTimePickerDate.Name = "dateTimePickerDate";
             dateTimePickerDate.Size = new Size(250, 27);
             dateTimePickerDate.TabIndex = 2;
+            dateTimePickerDate.ValueChanged += dateTimePickerDate_ValueChanged;
             // 
             // flpanleTime
             // 
@@ -403,7 +407,7 @@
             labelTime.Name = "labelTime";
             labelTime.Size = new Size(450, 30);
             labelTime.TabIndex = 1;
-            labelTime.Text = "Time";
+            labelTime.Text = "Available Time";
             labelTime.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // comboBoxTime

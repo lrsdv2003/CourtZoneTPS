@@ -1,3 +1,5 @@
+using System.Data.SQLite;
+
 namespace CourtZoneTPS
 {
     public partial class MainForm : Form
@@ -5,6 +7,7 @@ namespace CourtZoneTPS
         public MainForm()
         {
             InitializeComponent();
+            CurrentUser();
             LoadPage(new DashboardPage());
         }
         public void LoadPage(UserControl page)
@@ -33,5 +36,22 @@ namespace CourtZoneTPS
         {
             LoadPage(new ReportsPage());
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+                parentForm.Close();
+
+        }
+        private void CurrentUser()
+        {
+            buttonLogout.Text = "User (" + UserHelper.CurrentUsername + ")";
+            LoadPage(new DashboardPage());
+        }
     }
 }
+

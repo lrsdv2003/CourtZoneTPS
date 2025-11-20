@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\CourtZoneTPS.csproj": {}
+    "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\CourtZoneTPS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\CourtZoneTPS.csproj": {
+    "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\CourtZoneTPS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\CourtZoneTPS.csproj",
+        "projectUniqueName": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\CourtZoneTPS.csproj",
         "projectName": "CourtZoneTPS",
-        "projectPath": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\CourtZoneTPS.csproj",
-        "packagesPath": "C:\\Users\\EJ Ridge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\obj\\",
+        "projectPath": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\CourtZoneTPS.csproj",
+        "packagesPath": "C:\\Users\\jm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\EJ Ridge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
