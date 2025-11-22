@@ -1,6 +1,6 @@
 ﻿namespace CourtZoneTPS
 {
-    partial class EditReservationPage
+    partial class EditReservationForm
     {
         /// <summary> 
         /// Required designer variable.

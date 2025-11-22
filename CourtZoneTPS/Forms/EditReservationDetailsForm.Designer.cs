@@ -1,6 +1,6 @@
 ﻿namespace CourtZoneTPS
 {
-    partial class EditReservationDetailsPage
+    partial class EditReservationDetailsForm
     {
         /// <summary> 
         /// Required designer variable.
@@ -42,19 +42,19 @@
             labelContanctNumber = new Label();
             textBoxContactNumber = new TextBox();
             panel2 = new Panel();
-            flpanelSportType = new FlowLayoutPanel();
-            labelSportType = new Label();
-            comboBoxSportType = new ComboBox();
-            flpanelCourtType = new FlowLayoutPanel();
-            labelCourtType = new Label();
-            comboBoxCourtType = new ComboBox();
-            panel3 = new Panel();
             flpanelDate = new FlowLayoutPanel();
             labelDate = new Label();
             dateTimePickerDate = new DateTimePicker();
+            flpanelSportType = new FlowLayoutPanel();
+            labelSportType = new Label();
+            comboBoxSportType = new ComboBox();
+            panel3 = new Panel();
             flpanleTime = new FlowLayoutPanel();
             labelTime = new Label();
             comboBoxTime = new ComboBox();
+            flpanelCourtType = new FlowLayoutPanel();
+            labelCourtType = new Label();
+            comboBoxCourtType = new ComboBox();
             panel4 = new Panel();
             flpanelPaymentStatus = new FlowLayoutPanel();
             labelPaymentStatus = new Label();
@@ -70,11 +70,11 @@
             flpanelCustomerName.SuspendLayout();
             flpanelContactNumber.SuspendLayout();
             panel2.SuspendLayout();
-            flpanelSportType.SuspendLayout();
-            flpanelCourtType.SuspendLayout();
-            panel3.SuspendLayout();
             flpanelDate.SuspendLayout();
+            flpanelSportType.SuspendLayout();
+            panel3.SuspendLayout();
             flpanleTime.SuspendLayout();
+            flpanelCourtType.SuspendLayout();
             panel4.SuspendLayout();
             flpanelPaymentStatus.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -249,108 +249,19 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(flpanelDate);
             panel2.Controls.Add(flpanelSportType);
-            panel2.Controls.Add(flpanelCourtType);
             panel2.Location = new Point(0, 100);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
             panel2.Size = new Size(940, 100);
             panel2.TabIndex = 1;
             // 
-            // flpanelSportType
-            // 
-            flpanelSportType.Controls.Add(labelSportType);
-            flpanelSportType.Controls.Add(comboBoxSportType);
-            flpanelSportType.Dock = DockStyle.Right;
-            flpanelSportType.FlowDirection = FlowDirection.TopDown;
-            flpanelSportType.Location = new Point(0, 0);
-            flpanelSportType.Margin = new Padding(0);
-            flpanelSportType.Name = "flpanelSportType";
-            flpanelSportType.Padding = new Padding(10);
-            flpanelSportType.Size = new Size(470, 100);
-            flpanelSportType.TabIndex = 2;
-            // 
-            // labelSportType
-            // 
-            labelSportType.Dock = DockStyle.Left;
-            labelSportType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            labelSportType.ForeColor = Color.FromArgb(30, 58, 138);
-            labelSportType.Location = new Point(10, 10);
-            labelSportType.Margin = new Padding(0, 0, 0, 10);
-            labelSportType.Name = "labelSportType";
-            labelSportType.Size = new Size(450, 30);
-            labelSportType.TabIndex = 1;
-            labelSportType.Text = "Sport Type";
-            labelSportType.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // comboBoxSportType
-            // 
-            comboBoxSportType.Dock = DockStyle.Left;
-            comboBoxSportType.Font = new Font("Segoe UI", 12F);
-            comboBoxSportType.FormattingEnabled = true;
-            comboBoxSportType.Items.AddRange(new object[] { "Basketball", "Volleyball", "Badminton", "Tennis" });
-            comboBoxSportType.Location = new Point(10, 50);
-            comboBoxSportType.Margin = new Padding(0);
-            comboBoxSportType.Name = "comboBoxSportType";
-            comboBoxSportType.Size = new Size(250, 36);
-            comboBoxSportType.TabIndex = 2;
-            comboBoxSportType.SelectedIndexChanged += comboBoxSportType_SelectedIndexChanged;
-            // 
-            // flpanelCourtType
-            // 
-            flpanelCourtType.Controls.Add(labelCourtType);
-            flpanelCourtType.Controls.Add(comboBoxCourtType);
-            flpanelCourtType.Dock = DockStyle.Right;
-            flpanelCourtType.FlowDirection = FlowDirection.TopDown;
-            flpanelCourtType.Location = new Point(470, 0);
-            flpanelCourtType.Margin = new Padding(0);
-            flpanelCourtType.Name = "flpanelCourtType";
-            flpanelCourtType.Padding = new Padding(10);
-            flpanelCourtType.Size = new Size(470, 100);
-            flpanelCourtType.TabIndex = 1;
-            // 
-            // labelCourtType
-            // 
-            labelCourtType.Dock = DockStyle.Left;
-            labelCourtType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            labelCourtType.ForeColor = Color.FromArgb(30, 58, 138);
-            labelCourtType.Location = new Point(10, 10);
-            labelCourtType.Margin = new Padding(0, 0, 0, 10);
-            labelCourtType.Name = "labelCourtType";
-            labelCourtType.Size = new Size(450, 30);
-            labelCourtType.TabIndex = 1;
-            labelCourtType.Text = "Court Type";
-            labelCourtType.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // comboBoxCourtType
-            // 
-            comboBoxCourtType.Dock = DockStyle.Left;
-            comboBoxCourtType.Font = new Font("Segoe UI", 12F);
-            comboBoxCourtType.FormattingEnabled = true;
-            comboBoxCourtType.Items.AddRange(new object[] { "Open Court", "Covered Court", "Airconditioned Court" });
-            comboBoxCourtType.Location = new Point(10, 50);
-            comboBoxCourtType.Margin = new Padding(0);
-            comboBoxCourtType.Name = "comboBoxCourtType";
-            comboBoxCourtType.Size = new Size(250, 36);
-            comboBoxCourtType.TabIndex = 3;
-            comboBoxCourtType.SelectedIndexChanged += comboBoxCourtType_SelectedIndexChanged;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Transparent;
-            panel3.Controls.Add(flpanelDate);
-            panel3.Controls.Add(flpanleTime);
-            panel3.Location = new Point(0, 200);
-            panel3.Margin = new Padding(0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(940, 100);
-            panel3.TabIndex = 2;
-            // 
             // flpanelDate
             // 
             flpanelDate.Controls.Add(labelDate);
             flpanelDate.Controls.Add(dateTimePickerDate);
-            flpanelDate.Dock = DockStyle.Right;
+            flpanelDate.Dock = DockStyle.Left;
             flpanelDate.FlowDirection = FlowDirection.TopDown;
             flpanelDate.Location = new Point(0, 0);
             flpanelDate.Margin = new Padding(0);
@@ -382,7 +293,55 @@
             dateTimePickerDate.Name = "dateTimePickerDate";
             dateTimePickerDate.Size = new Size(250, 27);
             dateTimePickerDate.TabIndex = 2;
-            dateTimePickerDate.ValueChanged += dateTimePickerDate_ValueChanged;
+            // 
+            // flpanelSportType
+            // 
+            flpanelSportType.Controls.Add(labelSportType);
+            flpanelSportType.Controls.Add(comboBoxSportType);
+            flpanelSportType.Dock = DockStyle.Right;
+            flpanelSportType.FlowDirection = FlowDirection.TopDown;
+            flpanelSportType.Location = new Point(470, 0);
+            flpanelSportType.Margin = new Padding(0);
+            flpanelSportType.Name = "flpanelSportType";
+            flpanelSportType.Padding = new Padding(10);
+            flpanelSportType.Size = new Size(470, 100);
+            flpanelSportType.TabIndex = 2;
+            // 
+            // labelSportType
+            // 
+            labelSportType.Dock = DockStyle.Left;
+            labelSportType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            labelSportType.ForeColor = Color.FromArgb(30, 58, 138);
+            labelSportType.Location = new Point(10, 10);
+            labelSportType.Margin = new Padding(0, 0, 0, 10);
+            labelSportType.Name = "labelSportType";
+            labelSportType.Size = new Size(450, 30);
+            labelSportType.TabIndex = 1;
+            labelSportType.Text = "Sport Type";
+            labelSportType.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // comboBoxSportType
+            // 
+            comboBoxSportType.Dock = DockStyle.Left;
+            comboBoxSportType.Font = new Font("Segoe UI", 12F);
+            comboBoxSportType.FormattingEnabled = true;
+            comboBoxSportType.Items.AddRange(new object[] { "Basketball", "Volleyball", "Badminton", "Tennis" });
+            comboBoxSportType.Location = new Point(10, 50);
+            comboBoxSportType.Margin = new Padding(0);
+            comboBoxSportType.Name = "comboBoxSportType";
+            comboBoxSportType.Size = new Size(250, 36);
+            comboBoxSportType.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Transparent;
+            panel3.Controls.Add(flpanleTime);
+            panel3.Controls.Add(flpanelCourtType);
+            panel3.Location = new Point(0, 200);
+            panel3.Margin = new Padding(0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(940, 100);
+            panel3.TabIndex = 2;
             // 
             // flpanleTime
             // 
@@ -421,6 +380,44 @@
             comboBoxTime.Name = "comboBoxTime";
             comboBoxTime.Size = new Size(250, 36);
             comboBoxTime.TabIndex = 4;
+            // 
+            // flpanelCourtType
+            // 
+            flpanelCourtType.Controls.Add(labelCourtType);
+            flpanelCourtType.Controls.Add(comboBoxCourtType);
+            flpanelCourtType.Dock = DockStyle.Left;
+            flpanelCourtType.FlowDirection = FlowDirection.TopDown;
+            flpanelCourtType.Location = new Point(0, 0);
+            flpanelCourtType.Margin = new Padding(0);
+            flpanelCourtType.Name = "flpanelCourtType";
+            flpanelCourtType.Padding = new Padding(10);
+            flpanelCourtType.Size = new Size(470, 100);
+            flpanelCourtType.TabIndex = 1;
+            // 
+            // labelCourtType
+            // 
+            labelCourtType.Dock = DockStyle.Left;
+            labelCourtType.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            labelCourtType.ForeColor = Color.FromArgb(30, 58, 138);
+            labelCourtType.Location = new Point(10, 10);
+            labelCourtType.Margin = new Padding(0, 0, 0, 10);
+            labelCourtType.Name = "labelCourtType";
+            labelCourtType.Size = new Size(450, 30);
+            labelCourtType.TabIndex = 1;
+            labelCourtType.Text = "Court Type";
+            labelCourtType.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // comboBoxCourtType
+            // 
+            comboBoxCourtType.Dock = DockStyle.Left;
+            comboBoxCourtType.Font = new Font("Segoe UI", 12F);
+            comboBoxCourtType.FormattingEnabled = true;
+            comboBoxCourtType.Items.AddRange(new object[] { "Open Court", "Covered Court", "Airconditioned Court" });
+            comboBoxCourtType.Location = new Point(10, 50);
+            comboBoxCourtType.Margin = new Padding(0);
+            comboBoxCourtType.Name = "comboBoxCourtType";
+            comboBoxCourtType.Size = new Size(250, 36);
+            comboBoxCourtType.TabIndex = 3;
             // 
             // panel4
             // 
@@ -530,14 +527,14 @@
             buttonCancel.UseVisualStyleBackColor = false;
             buttonCancel.Click += buttonCancel_Click;
             // 
-            // EditReservationDetailsPage
+            // EditReservationDetailsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panelHeader);
             Margin = new Padding(0);
-            Name = "EditReservationDetailsPage";
+            Name = "EditReservationDetailsForm";
             Size = new Size(980, 800);
             panelHeader.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
@@ -548,11 +545,11 @@
             flpanelContactNumber.ResumeLayout(false);
             flpanelContactNumber.PerformLayout();
             panel2.ResumeLayout(false);
-            flpanelSportType.ResumeLayout(false);
-            flpanelCourtType.ResumeLayout(false);
-            panel3.ResumeLayout(false);
             flpanelDate.ResumeLayout(false);
+            flpanelSportType.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             flpanleTime.ResumeLayout(false);
+            flpanelCourtType.ResumeLayout(false);
             panel4.ResumeLayout(false);
             flpanelPaymentStatus.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);

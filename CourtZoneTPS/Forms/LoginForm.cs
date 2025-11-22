@@ -59,7 +59,7 @@ namespace CourtZoneTPS
         public string GetUsernameByEmployeeNumber()
         {
             string employeeNumber = textBoxEmployeeNumber.Text;
-            string dbPath = @"C:\Users\jm\OneDrive\Desktop\Database\CourtZoneTpsDB.db";
+            string dbPath = @"C:\Users\EJ Ridge\OneDrive - STI College Ortigas-Cainta\Desktop\CourtZoneTPS_DB\CourtZoneTpsDB.db";
             string connectionString = $"Data Source={dbPath};Version=3;";
 
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
@@ -75,7 +75,7 @@ namespace CourtZoneTPS
                     if (result != null)
                         return result.ToString();
                     else
-                        return null; 
+                        return null;
                 }
             }
         }

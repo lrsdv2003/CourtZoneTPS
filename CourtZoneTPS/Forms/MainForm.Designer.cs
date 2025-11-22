@@ -108,7 +108,7 @@
             flpanelButtonSidebar.Location = new Point(0, 100);
             flpanelButtonSidebar.Margin = new Padding(0);
             flpanelButtonSidebar.Name = "flpanelButtonSidebar";
-            flpanelButtonSidebar.Padding = new Padding(20, 40, 20, 40);
+            flpanelButtonSidebar.Padding = new Padding(20, 40, 20, 10);
             flpanelButtonSidebar.Size = new Size(300, 700);
             flpanelButtonSidebar.TabIndex = 3;
             // 
@@ -141,7 +141,7 @@
             buttonReports.Image = (Image)resources.GetObject("buttonReports.Image");
             buttonReports.ImageAlign = ContentAlignment.MiddleLeft;
             buttonReports.Location = new Point(20, 280);
-            buttonReports.Margin = new Padding(0, 0, 0, 240);
+            buttonReports.Margin = new Padding(0, 0, 0, 300);
             buttonReports.Name = "buttonReports";
             buttonReports.Size = new Size(260, 60);
             buttonReports.TabIndex = 3;
@@ -159,12 +159,11 @@
             buttonLogout.ForeColor = Color.White;
             buttonLogout.Image = (Image)resources.GetObject("buttonLogout.Image");
             buttonLogout.ImageAlign = ContentAlignment.MiddleRight;
-            buttonLogout.Location = new Point(20, 580);
+            buttonLogout.Location = new Point(20, 640);
             buttonLogout.Margin = new Padding(0);
             buttonLogout.Name = "buttonLogout";
             buttonLogout.Size = new Size(260, 30);
             buttonLogout.TabIndex = 4;
-            buttonLogout.Text = "My Baby Gabby";
             buttonLogout.TextAlign = ContentAlignment.MiddleLeft;
             buttonLogout.TextImageRelation = TextImageRelation.TextBeforeImage;
             buttonLogout.UseVisualStyleBackColor = false;

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panelLoginFom = new Panel();
             panelLogo = new Panel();
+            pictureBox1 = new PictureBox();
             panelLogin = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
@@ -44,6 +46,8 @@
             labelError = new Label();
             CourtZone = new Label();
             panelLoginFom.SuspendLayout();
+            panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelLogin.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flpanelEmployee.SuspendLayout();
@@ -64,14 +68,27 @@
             // 
             // panelLogo
             // 
-            panelLogo.BackColor = Color.Transparent;
+            panelLogo.BackColor = Color.FromArgb(30, 58, 138);
+            panelLogo.Controls.Add(pictureBox1);
             panelLogo.Dock = DockStyle.Left;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Margin = new Padding(0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Padding = new Padding(50);
+            panelLogo.Padding = new Padding(100);
             panelLogo.Size = new Size(490, 600);
             panelLogo.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(100, 100);
+            pictureBox1.Margin = new Padding(0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(290, 400);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panelLogin
             // 
@@ -104,12 +121,13 @@
             // label1
             // 
             label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(30, 58, 138);
             label1.Location = new Point(0, 0);
             label1.Margin = new Padding(0, 0, 0, 20);
             label1.Name = "label1";
             label1.Size = new Size(410, 50);
             label1.TabIndex = 0;
-            label1.Text = "Employee Login";
+            label1.Text = "Login";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // flpanelEmployee
@@ -188,6 +206,7 @@
             // 
             // checkBoxShowPassword
             // 
+            checkBoxShowPassword.ForeColor = Color.FromArgb(30, 58, 138);
             checkBoxShowPassword.ImageAlign = ContentAlignment.MiddleLeft;
             checkBoxShowPassword.Location = new Point(3, 87);
             checkBoxShowPassword.Name = "checkBoxShowPassword";
@@ -228,6 +247,7 @@
             // 
             CourtZone.Dock = DockStyle.Top;
             CourtZone.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CourtZone.ForeColor = Color.FromArgb(30, 58, 138);
             CourtZone.Location = new Point(40, 40);
             CourtZone.Margin = new Padding(0);
             CourtZone.Name = "CourtZone";
@@ -249,6 +269,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CourtZone-Login";
             panelLoginFom.ResumeLayout(false);
+            panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelLogin.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             flpanelEmployee.ResumeLayout(false);
@@ -275,5 +297,6 @@
         private CheckBox checkBoxShowPassword;
         private Button buttonLogin;
         private Label labelError;
+        private PictureBox pictureBox1;
     }
 }

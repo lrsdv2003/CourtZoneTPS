@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourtZoneTPS
 {
     public class Reservation
     {
-        public int Id { get; set; }
+        public int ReservationID { get; set; }
+        public int UserID { get; set; }
         public string CustomerName { get; set; }
-        public string SportsType { get; set; }
-        public string Date {  get; set; }  
-        public string PaymentStatus {  get; set; }
         public string ContactNumber { get; set; }
-        public string CourtType {  get; set; }
-        public string  Time{ get; set; }
+        public string SportsType { get; set; }
+        public string CourtType { get; set; }
+        public DateTime Date { get; set; }      // use DateTime in code
+        public string TimeSlot { get; set; }
+        public string PaymentStatus { get; set; }
+        public decimal PaymentAmount { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }

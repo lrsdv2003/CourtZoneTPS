@@ -1,46 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\",
+  "WorkspaceRootPath": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\editreservationdetailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\editreservationdetailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\ej ridge\\source\\repos\\courtzonetps\\courtzonetps\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\editreservationdetailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\editreservationdetailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\courtzonetps\\forms\\reportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\reportspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\addreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\addreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\ej ridge\\source\\repos\\courtzonetps\\courtzonetps\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\ej ridge\\source\\repos\\courtzonetps\\courtzonetps\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\userhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\userhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\ej ridge\\source\\repos\\courtzonetps\\courtzonetps\\forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\addreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\addreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\editreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\editreservationpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|c:\\users\\jm\\onedrive\\desktop\\courtzoneproject\\courtzonetps\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\courtzonetps\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E289A237-2D8B-4070-B0DA-FC146C5B2C7B}|CourtZoneTPS\\CourtZoneTPS.csproj|solutionrelative:courtzonetps\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,133 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\MainForm.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\MainForm.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\MainForm.cs",
-              "RelativeToolTip": "CourtZoneTPS\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T20:56:02.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserHelper.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\UserHelper.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\UserHelper.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\UserHelper.cs",
-              "RelativeToolTip": "CourtZoneTPS\\UserHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Title": "DashboardForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.Designer.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\DashboardForm.Designer.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.Designer.cs",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\DashboardForm.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T03:42:21.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\LoginForm.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\LoginForm.cs",
-              "RelativeToolTip": "CourtZoneTPS\\LoginForm.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:27:21.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditReservationDetailsPage.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "RelativeToolTip": "CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAmwOMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T23:43:36.584Z",
+              "WhenOpened": "2025-11-22T04:05:02.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddReservationPage.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\AddReservationPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\AddReservationPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\AddReservationPage.cs",
-              "RelativeToolTip": "CourtZoneTPS\\AddReservationPage.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAkwLoAAAAoAAAAAAAAAA==",
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T12:33:51.99Z",
+              "WhenOpened": "2025-11-22T04:04:35.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddReservationPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\AddReservationPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\AddReservationPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\AddReservationPage.cs [Design]",
-              "RelativeToolTip": "CourtZoneTPS\\AddReservationPage.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\MainForm.cs",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\MainForm.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T08:17:18.755Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EditReservationPage.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\EditReservationPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationPage.cs",
-              "RelativeToolTip": "CourtZoneTPS\\EditReservationPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T12:52:43.316Z",
+              "WhenOpened": "2025-11-22T03:24:45.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditReservationDetailsPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\EditReservationDetailsPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\EditReservationDetailsPage.cs [Design]",
-              "RelativeToolTip": "CourtZoneTPS\\EditReservationDetailsPage.cs [Design]",
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\DashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T08:06:05.222Z",
+              "WhenOpened": "2025-11-22T03:24:31.784Z",
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardPage.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\DashboardPage.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\DashboardPage.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\DashboardPage.cs",
-              "RelativeToolTip": "CourtZoneTPS\\DashboardPage.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwEoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T07:10:41.594Z"
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\Reservation.cs",
-              "RelativeDocumentMoniker": "CourtZoneTPS\\Reservation.cs",
-              "ToolTip": "C:\\Users\\jm\\OneDrive\\Desktop\\CourtZoneProject\\CourtZoneTPS\\Reservation.cs",
-              "RelativeToolTip": "CourtZoneTPS\\Reservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\MainForm.cs [Design]",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T12:44:08.63Z"
+              "WhenOpened": "2025-11-22T03:24:42.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportsPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\ReportsPage.cs",
+              "RelativeDocumentMoniker": "CourtZoneTPS\\Forms\\ReportsPage.cs",
+              "ToolTip": "C:\\Users\\EJ Ridge\\source\\repos\\CourtZoneTPS\\CourtZoneTPS\\Forms\\ReportsPage.cs [Design]",
+              "RelativeToolTip": "CourtZoneTPS\\Forms\\ReportsPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T11:19:44.557Z"
             }
           ]
         }

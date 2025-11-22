@@ -1,45 +1,69 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourtZoneTPS
 {
     public static class UserHelper
     {
-        public static string CurrentUsername { get; private set; }
+        public static int CurrentUserId { get; private set; }
         public static string CurrentEmployeeNumber { get; private set; }
 
+        private static readonly string dbPath =
+            @"C:\Users\EJ Ridge\OneDrive - STI College Ortigas-Cainta\Desktop\CourtZoneTPS_DB\CourtZoneTpsDB.db";
+
+        private static readonly string connectionString =
+            $"Data Source={dbPath};Version=3;";
+
+        // ==================================================
+        // LOGIN VALIDATION (employeeNumber + password)
+        // ==================================================
         public static bool LoginUser(string employeeNumber, string password)
         {
-            string username = GetUsernameByEmployeeNumber(employeeNumber);
-
-            if (!string.IsNullOrEmpty(username))
-            {
-                CurrentUsername = username;
-                CurrentEmployeeNumber = employeeNumber;
-                return true;
-            }
-
-            return false; 
-        }
-
-        public static string GetUsernameByEmployeeNumber(string employeeNumber)
-        {
-            string dbPath = @"C:\Users\jm\OneDrive\Desktop\Database\CourtZoneTpsDB.db";
-            string connectionString = $"Data Source={dbPath};Version=3;";
-
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT employeeNumber FROM loginInfo WHERE employeeNumber = @employeeNumber";
+
+                string query = @"
+                    SELECT user_Id 
+                    FROM LoginInfo 
+                    WHERE employeeNumber = @employeeNumber 
+                    AND password = @password
+                    LIMIT 1
+                ";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@employeeNumber", employeeNumber);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        CurrentUserId = Convert.ToInt32(result);
+                        CurrentEmployeeNumber = employeeNumber;
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        // Returns ONLY employeeNumber if needed
+        public static string GetEmployeeNumber(string employeeNumber)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "SELECT employeeNumber FROM LoginInfo WHERE employeeNumber = @employeeNumber";
+
                 using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@employeeNumber", employeeNumber);
                     object result = cmd.ExecuteScalar();
-                    return result?.ToString(); 
+                    return result?.ToString();
                 }
             }
         }
